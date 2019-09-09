@@ -1,1 +1,4 @@
 <%= react_component("Signup") %>
+<%= form_with(model: @user, local: true) do |form| %>
+  <%= react_component('UserForm', { user: @user }) %>
+<% end %>
